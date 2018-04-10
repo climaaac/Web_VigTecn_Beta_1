@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+}
+header {
+    position: fixed;
+    width:100%; /* Establecemos que el header abarque el 100% del documento */
+    background: #E8EDED;
+    margin: 0;
+    border-bottom: 4px solid grey;
+    font-family: 'Arial', sans-serif; /*estilo de fuente Cabecera*/
+    z-index: 100;
+}
+.content{
+    padding-top: 170px;
+    margin: 0 auto;
+    max-width: 840px;
+}
+header .bar {
+    width:100%; /* Establecemos que el ancho sera del 90% */
+    max-width:1200px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+    margin: 0 auto; /* Centramos los elementos */
+    background: green;
+}
+header .logo {
+    color:#f2f2f2;
+    float:left;
+    font-size: 40px;
+    line-height: 140px;
+    padding: 30px 0px 0px 0;
+    margin-bottom: 16px;
+    -webkit-transition:all 500ms ease;
+}
+header .logo h1{
+    -webkit-transition:all 500ms ease;
+    display: inline-block;
+    color: #303030;
+    margin: 0;
+    font-size: 42px;
+    line-height: 40px;
+}
+header .logo h2{
+    -webkit-transition:all 500ms ease;
+    color: #303030;
+    margin: 20px 0 0;
+    font-size: 24px;
+    line-height: 30px;
+}
+header .logo img{
+    float: right;
+    padding-left: 20px;
+    padding-top: 0px;
+    -webkit-transition:all 500ms ease;
+}
+header #navigation{
+    -webkit-transition:all 500ms ease;
+}
+.header2 {
+    position: fixed;
+}
+.header2 .logo{
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding: 0px;
+    margin-left: -290px;
+    -webkit-transform:scale(0.6);transform:scale(0.6);
+    transform-origin: left;
+}
+.header2 .logo img{
+    -webkit-transition:all 500ms ease;
+    margin-left: 70px;
+}
+header2 .bar{
+    margin: 0;
+}
+.header2 #navigation{
+    margin-top: -90px;
+}
+@media screen and (max-width: 950px) { /* PERMITE ADAPTAR EL HEADER A UN DISPOSITIVO MÓVIL */
+    header .logo,
+    header nav {
+        width:100%;
+        text-align:center; /*Centramos el menu y el logotipo*/
+        line-height:100px;
+    }
+    .header2 {
+        height:auto;
+    }
+    .header2 .logo,
+    .header2 nav {
+        line-height:50px;
+    }
+}
+.article{
+
+    position: relative;
+    display: inline-block;
+    margin-top: 2px;
+    margin-left: 2px;
+    width: 417px;
+    height: 300px;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+.article img{
+    -webkit-transition:all 500ms ease;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.articlecont{
+    font-family: 'Arial', sans-serif; /*estilo de fuente Cabecera*/
+    text-align: justify;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    background: #606060;
+    color: white;
+}
+.articlecont h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 14px 0 8px 10px;
+}
+.articlecont h4{
+    font-size: 12px;
+    margin:0 14px 8px;
+    padding: 0;
+}
+.article img:hover{
+    -webkit-transform:scale(1.2);transform:scale(1.2);
+}

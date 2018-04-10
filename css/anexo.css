@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-abr-2018, 9:26:55
+    Author     : clima
+*/
+#navigation > ul > li:last-child{
+border-right:none;
+}
+#navigation > ul > li > a{
+font-weight:normal;
+}
+#navigation > ul > li > a:hover{ /* Acciones hover menu */
+font-weight:normal;
+}
+#navigation > ul > li > ul > li > a:hover{ /* Acciones hover menu hijos */
+font-weight:normal;
+}
+#navigation ul ul li:first-child a{ /* Configuarción primer hijo */
+text-align: left;
+}
+#navigation ul ul li:last-child a{  /* Configuarción último hijo */
+border-bottom:none;
+text-align: left;
+}
+#navigation ul ul li a:hover{
+color: red;
+}
+#navigation ul ul ul{ /*Posición nietos */
+top:0px;
+}
+
+
+
+
