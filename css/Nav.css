@@ -22,7 +22,8 @@ padding: 120px 0 0;
 margin: 0;
 }
 #navigation ul li { /* Bloques menu despliegue horizontal */
--webkit-transition:all 100ms ease;
+cursor:pointer;
+-webkit-transition:all 50ms ease;
 position: relative;
 width: 110px;
 float: left;
@@ -44,7 +45,7 @@ font-size: 12px;
 }
 
 #navigation li li{ /* FORMATO LISTA CUADRADO DESPLEGABLE */
-background: #E8EDED;;
+background: #E8EDED;
 width: 110px;
 display: block;
 border-right: 2px solid gray

@@ -1,19 +1,17 @@
 body{
     margin: 0;
+    background-image: url("../images/fondo1.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
 }
 header {
     position: fixed;
     width:100%; /* Establecemos que el header abarque el 100% del documento */
-    background: #E8EDED;
+    background-image: -moz-linear-gradient(90deg, #E8EDED, #C2D1D1);
     margin: 0;
     border-bottom: 4px solid grey;
     font-family: 'Arial', sans-serif; /*estilo de fuente Cabecera*/
     z-index: 100;
-}
-.content{
-    padding-top: 170px;
-    margin: 0 auto;
-    max-width: 840px;
 }
 header .bar {
     width:100%; /* Establecemos que el ancho sera del 90% */
@@ -22,6 +20,7 @@ header .bar {
     background: green;
 }
 header .logo {
+    cursor:pointer;
     color:#f2f2f2;
     float:left;
     font-size: 40px;
@@ -91,16 +90,15 @@ header2 .bar{
     }
 }
 .article{
-
+    cursor:pointer;
     position: relative;
     display: inline-block;
     margin-top: 2px;
     margin-left: 2px;
-    width: 417px;
+    width: 437px;
     height: 300px;
     z-index: 1;
-    overflow: hidden;
-    
+    overflow: hidden;   
 }
 .article img{
     -webkit-transition:all 500ms ease;
@@ -112,12 +110,20 @@ header2 .bar{
 .articlecont{
     font-family: 'Arial', sans-serif; /*estilo de fuente Cabecera*/
     text-align: justify;
-    bottom: 0;
+    height: 100%;
+    margin-top: 260px;
     position: absolute;
     width: 100%;
     z-index: 3;
     background: #606060;
+    opacity:0.9;
     color: white;
+    -webkit-transition:all 500ms ease;
+}
+.article:hover .articlecont{
+    margin-top: 0px;
+    -webkit-transition:all 500ms ease;
+    opacity:0.7;
 }
 .articlecont h3{
     font-size: 18px;
@@ -129,6 +135,73 @@ header2 .bar{
     margin:0 14px 8px;
     padding: 0;
 }
-.article img:hover{
+.article:hover img{
     -webkit-transform:scale(1.2);transform:scale(1.2);
+}
+.content{
+    padding-top: 167px;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    max-width: 880px;
+    background: white;
+}
+.Fof_content{
+    font-family: 'Arial', sans-serif; /*estilo de fuente Cabecera*/
+    margin: 60px auto;
+    max-width: 720px;
+}
+.content .Fof_content h3{
+    color: #79BBEA;
+    padding: 0;
+    margin: 20px 0 20px 0px;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: justify;
+}
+.content .Fof_content h4{
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    text-align: justify;
+}
+.Fof_content iframe{
+    border: 0px;
+    padding: 0px;
+    margin: 0 0 20px 0;
+}
+.Fof_content iframe:nth-of-type(2n){
+    width:100%;
+    height:315px;
+    float: left;
+    margin-bottom: 20px;
+}
+.Fof_content iframe:nth-of-type(2n+1){
+    width:100%;
+    height:315px;
+    float: right;
+}
+.ReturnTop{
+    width: 100px;
+    color: #63B3E8;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 0px;
+    -webkit-transition:all 100ms ease;
+}
+.ReturnTop a{
+    font-size: 16px;
+}
+.ReturnTop:hover{
+    color: #303030;
+}
+footer{
+    position: relative;
+    bottom: 100%;
+    width:100%; /* Establecemos que el header abarque el 100% del documento */
+    background: gray;
+    margin: 20px 0 0 0 ;
+    border-top: 4px solid #E8EDED;
+    font-family: 'Arial', sans-serif; /*estilo de fuente Cabecera*/
+    height: 100px;
 }
